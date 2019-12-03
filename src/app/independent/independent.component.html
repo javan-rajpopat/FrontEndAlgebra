@@ -1,0 +1,235 @@
+<video controls autoplay *ngIf="currentTab === 'IntroVideo'">
+    <source src="https://drive.google.com/file/d/1q72MclYw9y3vnBlvbxX5naHIvyz6649s/view?usp=sharing" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div *ngIf="currentTab === 'UnitOverView'">
+    <span class = "unitOverView"  [innerHTML] = "unitOverviewData"></span>
+    <img src="https://i.gifer.com/56hx.gif" alt="Javan" height="200px" width="200px">
+</div>
+<div *ngIf="currentTab === 'Home' || currentTab === 'Examples' || currentTab === 'Quiz'">
+    <div class="tables">
+        <div *ngIf = "linearEquation" style="background-color: paleturquoise; width: 25vw; margin-left: 20px; margin-top: 10px;">
+                <h3 class="middle"> Equation </h3>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell">
+                        <div *ngIf="menuItemSelectedL">
+                            {{menuItemSelectedL}}
+                        </div>
+                    </div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell">
+                        <span *ngIf="menuItemSelectedR">
+                            {{menuItemSelectedR}}
+                        </span>
+                    </div>
+            
+                </div>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtable Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equal"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+        </div>
+        <div *ngIf = "linearEquation" style="background-color: blanchedalmond; width: 25vw; margin-left: 20px; margin-top: 10px;">
+            <h3 class="middle"> Transformation </h3>
+            <div class="Ltable Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltable Rtable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltable Rtable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltable Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltable Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltable Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+        </div>
+        <div *ngIf = "!linearEquation"style="background-color: rosybrown; width: 25vw; margin-left: 20px; margin-top: 10px;">
+                <h3 class="middle"> Plus and Minus </h3>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell">
+                        <div *ngIf="menuItemSelectedL">
+                            {{menuItemSelectedL}}
+                        </div>
+                    </div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell">
+                        <span *ngIf="menuItemSelectedR">
+                            {{menuItemSelectedR}}
+                        </span>
+                    </div>
+            
+                </div>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+                <div class="Rtablep Rtable--5cols">
+            
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell"><h3></h3></div>
+                    <div class="Rtable-cell equalp"> = </div>
+                    <div class="Rtable-cell"></div>
+            
+                </div>
+        </div>
+        <div *ngIf = "!linearEquation"style="background-color: aqua; width: 25vw; margin-left: 20px; margin-top: 10px;">
+            <h3 class="middle"> Transformation </h3>
+            <div class="Ltablep Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltablep Rtable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltablep Rtable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltablep Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltablep Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+            <div class="Ltablep Ltable--5cols">
+        
+                <div class="Ltable-cell"><h3></h3></div>
+        
+            </div>
+        </div>
+        <div *ngIf="currentTab !== 'Home'" style="padding-left: 25vw; padding-top: 8vw; display:flex; flex-direction: column;">
+            <button class="menuBtn" *ngIf="currentTab === 'Quiz'" style="background-color: aquamarine;">
+                Take Quiz
+            </button>
+            <button (click)="onClick(1)" class="menuBtn">
+                One
+                <i class="down"></i>
+            </button>
+            <div *ngIf="exampleMenuOpen === 1">
+                <ul>
+                    <li *ngFor="let item of exampleMenuL; let i = index">
+                        <button (click)="menuOptionSelected(i)" class="menuOption">
+                            {{item}} = {{exampleMenuR[i]}}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button (click)="onClick(2)" class="menuBtn">
+                Two
+                <i class="down"></i>
+            </button>
+            <div *ngIf="exampleMenuOpen === 2">
+                <ul>
+                    <li *ngFor="let item of exampleMenuL; let i = index">
+                        <button (click)="menuOptionSelected(i)" class="menuOption">
+                            {{item}} = {{exampleMenuR[i]}}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <button (click)="onClick(3)" class="menuBtn">
+                Three
+                <i class="down"></i>
+            </button>
+            <div *ngIf="exampleMenuOpen === 3">
+                <ul>
+                    <li *ngFor="let item of exampleMenuL; let i = index">
+                        <button (click)="menuOptionSelected(i)" class="menuOption">
+                            {{item}} = {{exampleMenuR[i]}}
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <img src="https://i.gifer.com/56hx.gif" alt="Javan" height="200px" width="200px" style="bottom: -100px;">
+</div>

@@ -1,0 +1,14 @@
+<ul>
+  <li><a (click)="onClick(1)" >Home</a></li>
+  <li><a (click)="onClick(2)" >Practice</a></li>
+  <li><a (click)="onClick(3)" >Problem Bank</a></li>
+  <li><a (click)="onClick(4)" >Introduction Video</a></li>
+  <li><a (click)="onClick(5)" >Unit Overview</a></li>
+  <li><a (click)="onClick(6)" >Examples</a></li>
+  <li><a (click)="onClick(7)" >Quiz</a></li>
+</ul>
+
+<div [@routeAnimation]="getAnimationData(routerOutlet)">
+  <router-outlet #routerOutlet="outlet"></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet> 
